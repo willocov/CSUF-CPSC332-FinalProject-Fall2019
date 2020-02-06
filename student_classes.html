@@ -1,0 +1,43 @@
+<html>
+<head>
+        <title>CPSC 332 Term Project</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+        <center>
+                STUDENT CLASSES
+                <!-- Form 1 -->
+                <div id="frm2">
+                        
+                        <!-- Sends data to be processed to "data_process2.php" file by POST method -->
+                        <form action="student_class_data.php" method="POST">
+                                <p>
+                                        <label>Course Number:</label> <!-- Display "Course Number:" -->
+                                        <input type="text" id="user" name="s_courseNum" />   <!-- user input box -->
+                                </p>
+        
+                                <p>
+                                        <input type="submit" id="btn" name="s_login1" /> <!--  Submit button -->
+                                </p>
+        
+                        </form>
+        
+                </div>
+                
+                <!-- Back button -->
+                <button onclick="goBack()">Go Back</button>
+                
+        </center>
+        
+        <!-- Function for Back button -->
+        <script>
+                function goBack() {
+                  window.history.back()
+                }
+        </script>
+</body>    
+</html>
